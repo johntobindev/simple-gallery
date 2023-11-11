@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Scripts -->
+  <script src="./script.js"></script>
+
+  <!-- Title -->
+  <title>Simple Gallery</title>
+</head>
+
+<body>
+  <h1 class="title">Dublin Zoo - 2023/11/11</h1>
+
+  <div id="container"></div>
+
+  <div id="overlay">
+    <button
+    class="overlay-button-close"
+      onclick="hideOverlay()"
+    >X</button>
+
+    <button
+      class="overlay-button-prev"
+      onclick="handlePrev()"
+    >&lt;</button>
+
+    <div class="overlay-image-container">
+      <img id="overlay-image" alt="Photo of an animal at Dublin Zoo">
+    </div>
+
+    <button
+      class="overlay-button-next"
+      onclick="handleNext()"
+    >&gt;</button>
+  </div>
+</body>
+</html>
